@@ -51,3 +51,7 @@ Meteor.publish('topPosts', function(limit) {
   //   does this for us with the comment observers)
   sub.onStop(function() { postHandle.stop(); });
 });
+
+Meteor.publish("acdqueueAgent", function() {
+  return redisCollection.matching("acdqueue:agent:*");
+});

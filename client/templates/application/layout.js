@@ -10,7 +10,7 @@ Template.layout.rendered = function() {
         .insertBefore(next)
         .fadeIn();
     },
-    
+
     removeElement: function(node) {
       $(node).fadeOut(function() {
         $(this).remove();
